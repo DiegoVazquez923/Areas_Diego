@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        const opc= parseInt(prompt("Selecccione la figura a la que desea saca el area. \n 1.- Cuadrado \n 2.- Rectangulo \n 3.- Triangulo \n 4.- Circulo"))
+        switch(opc){
+            case 1:
+                const ladoc = parseInt(prompt("Ingrese el tamaño del lado del cuadrado"))
+                const areac =ladoc * ladoc;
+                alert(`El area del cuadrado es de ${areac}`)
+                break;
+            
+            case 2:
+                const lador1 = parseInt(prompt("Ingrese el tamaño del lado del cuadrado"))
+                const lador2 = parseInt(prompt("Ingrese el tamaño del otro lado del cuadrado"))
+                const arear =lador1 * lador2;
+                alert(`El area del rectangulo es de ${arear}`)
+                break;
+
+            case 3:
+                const ladot1 = parseInt(prompt("Ingrese el tamaño de la base del triangulo"))
+                const ladot2 = parseInt(prompt("Ingrese el tamaño de la altura del triangulo"))
+                const areat = (ladot1 * ladot2)/2;
+                alert(`El area del triangulo es de ${areat}`)
+                break;
+
+            case 4:
+                const radio = parseInt(prompt("Ingrese el tamaño del radio del circulo"))
+                const areacir = Math.PI * (radio*radio)
+                alert(`El area del circulo es de ${areacir}`)
+                break;
+            default:
+                alert("Ese no existe")
+                break;
+        }
+    </script>
+</body>
+</html>
